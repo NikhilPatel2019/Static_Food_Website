@@ -1,0 +1,241 @@
+body{
+  padding: 0;
+  margin: 0;
+  background-color: #fafafa;
+}
+
+/* NAVBAR */
+.sidebar {
+  position: fixed;
+  width: 25%;
+  height: 100vh;
+}
+
+.nav {
+  position: relative;
+  margin: 0 15%;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.nav-heading{
+  font-size: 40px;
+  color: black;
+  margin-top: 0;
+  margin-bottom: 30px;
+  font-family: 'Bodoni Moda', serif;
+  font-weight: 800;
+}
+
+.nav ul {
+  list-style: none;
+  padding: 0;
+}
+
+.nav ul li{
+  margin: 0;
+}
+
+nav ul li.active a{
+  text-decoration: line-through;
+  text-decoration-thickness: 2px;
+  text-decoration-color: #ff4e4e;
+
+}
+
+.nav ul li a{
+  line-height: 60px;
+  font-family: 'Lato', sans-serif;
+  text-decoration: none;
+  color: black;
+  display: block;
+  transition: all ease-out 300ms;
+  font-size: 20px;
+  color: #6b6b6b;
+}
+
+.nav ul li a:hover{
+  text-decoration: line-through;
+  text-decoration-thickness: 3px;
+  text-decoration-color: #ff4e4e;
+}
+
+button{
+  background-color: #ff4e4e;
+  color: #fff;
+  font-size: 15px;
+  border: none;
+  width: 110px;
+  height: 40px;
+  border-radius: 20px;
+}
+
+/* MAIN SECTION */
+
+.home {
+  position: relative;
+  width: 74%;
+  float: right;
+  height: 100vh;
+}
+
+.home-items{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+  }
+
+.box-1{
+  order: 1;
+  font-size: 45px;
+  width: 600px;
+  margin-top: 60px;
+  font-family: 'Bodoni Moda', serif;
+  font-weight: 900;
+  margin-right: 30px;
+}
+
+.box-2{
+  order: 3;
+  width: 1000px;
+}
+
+.box-3{
+  order: 2;
+  width: 300px;
+  margin-top: 70px;
+  font-size: 25px;
+  color: #6b6b6b;
+  font-family: 'Lato', sans-serif;
+}
+
+.box-1 h1{
+  margin-bottom: 20px;
+}
+.cool-line{
+  border: 2px solid #ff4e4e;
+  width: 50px;
+  margin: 0;
+  padding: 0;
+}
+
+
+/* CARD */
+.main-section {
+  display: flex;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+}
+.card {
+  width: 140px;
+  height: 180px;
+  margin: 16px;
+  /* border: 1px solid #ccc; */
+  border-radius: 8px;
+  background: #fff;
+  box-sizing: border-box;
+  align-content: center;
+  box-shadow: 5px 5px #f0f0f0;
+}
+
+img{
+  height: 120px;
+  width: 120px;
+  border-radius: 50%;
+  margin-top: 15px;
+  margin-left: 10px;
+}
+
+.food-items-names{
+  margin: 10px;
+  font-family: 'Lato', sans-serif;
+  font-weight: 700;
+  font-size: 15px;
+}
+
+/* MEDIA QUERIES */
+
+/*  ##Device = Tablets, Ipads (portrait)
+    ##Screen = B/w 768px to 1024px      */
+
+@media (min-width: 768px) and (max-width: 1024px) {
+  .box-1{
+    order: 1;
+  }
+
+  .box-2{
+    order: 2;
+  }
+
+  .box-3{
+    order: 3;
+    margin-top: 40px;
+    margin-bottom: 50px;
+  }
+}
+
+
+/*  ##Device = Tablets, Ipads (landscape)
+    ##Screen = B/w 768px to 1024px        */
+
+@media (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
+  .box-1{
+    order: 1;
+  }
+
+  .box-2{
+    order: 2;
+  }
+
+  .box-3{
+    order: 3;
+    margin-top: 40px;
+    margin-bottom: 50px;
+  }
+}
+
+/*  ##Device = Low Resolution Tablets, Mobiles (Landscape)
+    ##Screen = B/w 481px to 767px                     */
+
+@media (min-width: 481px) and (max-width: 767px) {
+  .box-1{
+    order: 1;
+  }
+
+  .box-2{
+    order: 2;
+  }
+
+  .box-3{
+    order: 3;
+    margin-top: 40px;
+    margin-bottom: 50px;
+  }
+
+}
+
+/*  ##Device = Most of the Smartphones Mobiles (Portrait)
+    ##Screen = B/w 320px to 479px                       */
+
+@media (min-width: 320px) and (max-width: 480px) {
+  .box-1{
+    order: 1;
+  }
+
+  .box-2{
+    order: 2;
+  }
+
+  .box-3{
+    order: 3;
+    margin-top: 40px;
+    margin-bottom: 50px;
+  }
+
+  .nav{
+    position: absolute;
+    visibility: hidden;
+  }
+}
+
+/* NAVBAR RESPONSIVE */
